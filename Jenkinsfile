@@ -30,7 +30,7 @@ pipeline {
             }
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'DockerHub-pio2pio') {
+                    docker.withRegistry('https://registry.hub.docker.com', '0b9b73fd-8b69-457f-94bb-8c3840749dd2') {
                         app.push("${env.BUILD_NUMBER}")
                         app.push("latest")
                     }
